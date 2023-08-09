@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bootstrap-Form_Validation</title>
+
+    <!-- css links -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/media.css">
+    <link rel="stylesheet" href="css/bootstrap-icons.css">
+</head>
+
+<body>
+
+    <!-- <form>
+        <div class="mb-3">
+            <label for="email1" class="form-label">Email address</label>
+            <input type="email" class="form-control" id="email1" name="email1" required>
+        </div>
+        <div class="mb-3">
+            <label for="password1" class="form-label">Password</label>
+            <input type="password" class="form-control" id="password1" name="password1" required>
+        </div>
+        <div class="mb-3 form-check">
+            <input type="checkbox" class="form-check-input" id="check1" name="check1">
+            <label class="form-check-label" for="check1">Check me out</label>
+        </div>
+        <div class="mb-3">
+            <input class="form-control form-control-lg" type="text" placeholder=".form-control-lg"
+                aria-label=".form-control-lg example">
+        </div>
+        <div class="mb-3"> <input class="form-control" type="text" placeholder="Default input"
+                aria-label="default input example">
+        </div>
+        <div class="mb-3">
+            <input class="form-control form-control-sm" type="text" placeholder=".form-control-sm" aria-label=".form-control-sm example">
+        </div>
+        
+        <div class="mb-3">
+            <label for="formFile" class="form-label">Default file input example</label>
+            <input class="form-control" type="file" id="formFile">
+          </div>
+          <div class="mb-3">
+            <label for="formFileMultiple" class="form-label">Multiple files input example</label>
+            <input class="form-control" type="file" id="formFileMultiple" multiple>
+          </div>
+          <div class="mb-3">
+            <label for="formFileDisabled" class="form-label">Disabled file input example</label>
+            <input class="form-control" type="file" id="formFileDisabled" disabled>
+          </div>
+          <div class="mb-3">
+            <label for="formFileSm" class="form-label">Small file input example</label>
+            <input class="form-control form-control-sm" id="formFileSm" type="file">
+          </div>
+          <div>
+            <label for="formFileLg" class="form-label">Large file input example</label>
+            <input class="form-control form-control-lg" id="formFileLg" type="file">
+          </div> -->
+
+    <div class="container">
+        <!-- form start -->
+        <form class="row g-3 needs-validation" novalidate>
+
+            <!-- firstname -->
+            <div class="col-md-6">
+                <label for="f_name" class="form-label">First name</label>
+                <input type="text" class="form-control f_name" id="f_name" name="f_name"
+                    placeholder="Enter Your First Name" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+            </div>
+            <!-- firstname -->
+
+            <!-- lastname -->
+            <div class="col-md-6">
+                <label for="l_name" class="form-label">Last name</label>
+                <input type="text" class="form-control l_name" id="l_name" name="l_name"
+                    placeholder="Enter Your Last Name" required>
+                <div class="valid-feedback">
+                    Looks good!
+                </div>
+                <div class="invalid-feedback">
+                    Please enter your last name.
+                </div>
+            </div>
+            <!-- lastname -->
+
+            <!-- username -->
+            <div class="col-md-4">
+                <label for="username" class="form-label">Username</label>
+                <div class="input-group has-validation">
+                    <span class="input-group-text" id="inputGroupPrepend">@</span>
+                    <input type="text" class="form-control username" id="username"
+                        name="username" placeholder="Enter your username" required>
+                    <div class="invalid-feedback">
+                        Please choose a username.
+                    </div>
+                </div>
+            </div>
+            <!-- username -->
+
+            <!-- city -->
+            <div class="col-md-6">
+                <label for="city" class="form-label">City</label>
+                <input type="text" class="form-control city" id="city" name="city" placeholder="Enter your city" required>
+                <div class="invalid-feedback">
+                    Please provide a valid city.
+                </div>
+            </div>
+            <!-- city -->
+
+            <!--  -->
+            <div class="col-md-3">
+                <label for="state" class="form-label">State</label>
+                <select class="form-select state" id="state" name="state" required>
+                    <option selected disabled value="">Choose...</option>
+                    <option>...</option>
+                </select>
+                <div class="invalid-feedback">
+                    Please select a valid state.
+                </div>
+            </div>
+
+            <div class="col-md-3">
+                <label for="zip" class="form-label">Zip</label>
+                <input type="text" class="form-control zip" id="zip" name="zip" placeholder="Enter zip code" required>
+                <div class="invalid-feedback">
+                    Please provide a valid zip.
+                </div>
+            </div>
+
+            <div class="col-12">
+                <div class="form-check">
+                    <input class="form-check-input" type="checkbox" value="" id="check" required>
+                    <label class="form-check-label" for="check">
+                        Agree to terms and conditions
+                    </label>
+                    <div class="invalid-feedback">
+                        You must agree before submitting.
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-12">
+                <button class="btn btn-primary" type="submit">Submit form</button>
+            </div>
+
+        </form>
+        <!-- form end -->
+    </div>
+
+    <!-- <button type="submit" class="btn btn-primary">Submit</button> -->
+    </form>
+    <!-- script link -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
